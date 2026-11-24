@@ -1,0 +1,12 @@
+# Build output and caches (regenerate with `npm run render`)
+rain-alley/out/
+rain-alley/node_modules/
+rain-alley/.hyperframes/
+rain-alley/.thumbnails/
+rain-alley/.transcode-cache/
+rain-alley/.waveform-cache/
+*.log
+
+# OS
+Thumbs.db
+.DS_Store

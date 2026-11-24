@@ -1,0 +1,14 @@
+{
+  "name": "rain-alley",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.9.91 preview",
+    "check": "npx --yes hyperframes@0.9.91 check",
+    "render": "npx --yes hyperframes@0.9.91 render",
+    "publish": "npx --yes hyperframes@0.9.91 publish"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.18.1"
+  }
+}

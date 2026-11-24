@@ -1,0 +1,9 @@
+[0:a]highpass=f=450,lowpass=f=10000,tremolo=f=0.11:d=0.30,tremolo=f=0.29:d=0.10,volume=1.0[aL];
+[1:a]highpass=f=450,lowpass=f=10000,tremolo=f=0.11:d=0.30,tremolo=f=0.29:d=0.10,volume=1.0[aR];
+[2:a]highpass=f=150,lowpass=f=2800,tremolo=f=0.17:d=0.28,volume=0.55[bL];
+[3:a]highpass=f=150,lowpass=f=2800,tremolo=f=0.17:d=0.28,volume=0.55[bR];
+[4:a]lowpass=f=110,tremolo=f=0.1:d=0.40,volume=0.85[rL];
+[5:a]lowpass=f=110,tremolo=f=0.1:d=0.40,volume=0.85[rR];
+[aL][bL][rL]amix=inputs=3:normalize=0[left];
+[aR][bR][rR]amix=inputs=3:normalize=0[right];
+[left][right]amerge=inputs=2,volume=0.55,afade=t=in:st=0:d=0.6,afade=t=out:st=42.2:d=1.8[out]
