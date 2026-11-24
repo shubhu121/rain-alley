@@ -1,5 +1,4 @@
-# Build output and caches (regenerate with `npm run render`)
-rain-alley/out/
+# Build output and caches (the delivery render is kept in Git LFS, see .gitattributes)
 rain-alley/node_modules/
 rain-alley/.hyperframes/
 rain-alley/.thumbnails/

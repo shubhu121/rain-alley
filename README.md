@@ -52,8 +52,8 @@ npx hyperframes@0.9.91 check                 # lint + runtime + layout + contras
 npx hyperframes@0.9.91 render --quality delivery --output out/rain-alley.mp4
 ```
 
-`out/`, `node_modules/` and `.hyperframes/` are git-ignored, so the delivery MP4 is not committed
-(172 MB); render it with the command above.
+`out/` holds the delivery render, tracked with Git LFS
+(`rain-alley/out/rain-alley.mp4`, 172 MB). `node_modules/` and the caches are git-ignored.
 
 ## Where things are
 
@@ -65,6 +65,7 @@ npx hyperframes@0.9.91 render --quality delivery --output out/rain-alley.mp4
 | `rain-alley/compositions/endcard.html` | the title lockup and its neon-tube strike |
 | `rain-alley/assets/footage/` | baked takes, 1920 × 804, all-intra H.264 |
 | `rain-alley/assets/audio/` | rain bed (built by `tools/rain.filter`), vent hiss |
+| `rain-alley/out/rain-alley.mp4` | the delivery render, 40 s, 172 MB (Git LFS) |
 | `rain-alley/SPEC.md` | the brief: numbers, shot list, banned defaults |
 | `rain-alley/STORYLINES.md` | the three storylines, and which was picked |
 | `rain-alley/REVIEW.md` | measured vs. looked at, weakest shot, kept warnings |
